@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+#startButton,
+#easylevel,
+#level1img,
+#wins1,
+#lose,
+#hard,
+#hardlevel2,
+#lose2,
+#win2,
+#impossiblelevel,
+#impossiblelevel3,
+#cateat,
+#lose3,
+#win3 {
+  margin: 0;
+  padding: 0;
+  width: 99vw;
+  height: 97vh;
+  object-fit: fill;
+}
+
+.click-image {
+  width: 25%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  top: 330px;
+  left: 500px;
+  position: absolute;
+}
+
+.click-image:hover {
+  transform: scale(1.05);
+}
+
+.outer-box {
+  background-color: #7eb449;
+  border-radius: 40px;
+  padding: 7px 0px 0px 0px;
+  border: 2px solid #2d7742;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  margin: -550px 590px;
+  position: relative;
+}
+
+.inner-box {
+  background-color: #d3f7af;
+  border-radius: 40px;
+  padding: 15px 40px;
+  border: 2px solid #477b57;
+  box-shadow:
+    inset 0px 8px 6px #546e47e6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guessInput {
+  width: 150px;
+  padding: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #575751;
+  font-weight: bold;
+  background: transparent;
+}
+
+.enter,
+.restart,
+#continue,
+.replay,
+#cont {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.enter:hover {
+  transform: scale(1.05);
+}
+
+.enter {
+  top: 46%;
+  left: 35%;
+}
+
+.restart {
+  top: 46%;
+  left: 60%;
+}
+
+.restart:hover {
+  transform: scale(1.05);
+}
+
+.time,
+.score {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 2px 2px 4px #000;
+  position: absolute;
+}
+
+.time {
+  top: 195px;
+  right: 180px;
+}
+
+.score {
+  top: 90px;
+  right: 80px;
+  display: flex;
+}
+
+#catrun,
+#tigerrun,
+#catwin,
+#catwalk,
+#catfind {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+#catrun {
+  top: 510px;
+  right: 400px;
+  width: 30vw;
+  animation: moveleft 5s linear infinite;
+}
+
+@keyframes moveleft {
+  0% {
+    right: -450px;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+#tigerrun {
+  top: 370px;
+  right: 10px;
+  animation: moveright cubic-bezier(1, 0.1, 0.9, 1)5s infinite;
+}
+
+@keyframes moveright {
+  0% {
+    right: -500px;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.remarks {
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #030303;
+}
+
+#remarks-3 {
+  width: 800px;
+  top: 100px;
+  font-size: 22px;
+}
+
+.replay {
+  top: 70%;
+  left: 20% !important;
+}
+
+.replay:hover {
+  transform: scale(1.05);
+}
+
+#continue:hover {
+  transform: scale(1.05);
+}
+
+#continue {
+  top: 70%;
+  left: 60% !important;
+  width: 13vw;
+}
+
+#catwin {
+  top: 610px;
+  right: 400px;
+  width: 20vw;
+  animation: movesright 5s linear infinite;
+}
+
+@keyframes movesright {
+  0% {
+    right: 850px;
+    top: 630px;
+  }
+
+  100% {
+    right: 100%;
+    top: 510px;
+  }
+}
+
+#finalscore1 {
+  top: 430px !important;
+  right: 700px !important;
+  font-size: 2.3rem !important;
+  color: rgb(241, 12, 176) !important;
+}
+
+#finalscore2 {
+  top: 30px !important;
+  right: 450px !important;
+  font-size: 2.3rem !important;
+  color: rgb(241, 12, 176) !important;
+}
+
+#final2 {
+  top: 30px !important;
+  right: 500px !important;
+  font-size: 2.3rem !important;
+  color: rgb(241, 12, 176) !important;
+}
+
+.scoreup {
+  top: 50px !important;
+  right: 70px !important;
+}
+
+.scoreups {
+  top: 100px !important;
+  right: 90px !important;
+}
+
+.timess {
+  top: 165px !important;
+  right: 125px !important;
+}
+
+h3 {
+  position: absolute;
+  top: 26px;
+  left: 700px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #030303;
+}
+
+#catstand,
+#catstand2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 370px;
+  right: 260px;
+  width: 12vw;
+}
+
+.catup {
+  right: 700px !important;
+}
+
+#catjump,
+#catjump2 {
+  position: absolute;
+  top: 330px;
+  right: 260px;
+  width: 42vw;
+}
+
+#sharkstand,
+#sharkstand2 {
+  position: absolute;
+  top: 500px;
+  right: 430px;
+  width: 14vw;
+}
+
+.sharkup {
+  right: 900px !important;
+}
+
+.catjump1 {
+  right: 700px !important;
+}
+
+#cont:hover {
+  transform: scale(1.05);
+}
+
+#cont {
+  top: 50px;
+  left: 320px;
+  width: 13vw;
+}
+
+#catwalk {
+  top: 410px;
+  right: 400px;
+  width: 20vw;
+  animation: moveleft 7s linear infinite;
+}
+
+@keyframes moveleft {
+  0% {
+    right: -450px;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+#catfind {
+  top: 550px;
+  right: 400px;
+  width: 20vw;
+}
+
+#ok-4 {
+  left: 630px !important;
+}
+
+#remarks-4 {
+  width: 180px;
+  top: 330px;
+  font-size: 22px;
+  left: 1075px;
+}
