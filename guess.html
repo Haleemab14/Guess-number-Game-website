@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cat Guardian — Help the Cat Find Its Owner</title>
+  <link rel="stylesheet" href="gues.css" />
+</head>
+
+<body>
+  <main id="app">
+    <section id="startscreen" style="display: block;">
+      <img id="startButton" src="gifs/start.gif" alt="Start Game">
+      <img src="gifs/play.png" alt="Play" class="click-image">
+      <audio id="start" src="sound/start.wav"></audio>
+      <audio id="oksound" src="sound/ok.wav"></audio>
+      <audio id="forest" src="sound/forest.wav" loop autoplay></audio>
+    </section>
+    <section id="easy" style="display: none;">
+      <img id="easylevel" src="gifs/easylevel.gif" alt="Easy Level">
+    </section>
+    <section id="level1" style="display:none;">
+      <img id="level1img" src="gifs/level1.gif" alt="Level 1">
+      <audio id="startSound" src="sound/gmaebegin.wav"></audio>
+      <audio id="level1sound" src="sound/level1.mp3"></audio>
+      <div class="outer-box">
+        <div class="inner-box">
+          <input type="number" class="guessInput" id="guessInput-1" min="1" placeholder="guess" />
+        </div>
+      </div>
+      <div class="time" id="timer-1">30</div>
+      <img id="ok-1" class="enter" src="gifs/ok.PNG" alt="Level 1">
+      <img id="stop-1" class="restart" src="gifs/stop.PNG" alt="Level 1">
+      <audio id="entersound" src="sound/enter.wav"></audio>
+      <audio id="error" src="sound/error.wav"></audio>
+      <audio id="catclose" src="sound/catclose.wav"></audio>
+      <audio id="tigerclose" src="sound/tigerclose.wav"></audio>
+      <audio id="tigerfar" src="sound/tigerfar.wav"></audio>
+      <div class="score">
+        <span>Score:</span>
+        <div id="scores-1">15</div>
+      </div>
+      <div id="remarks-1" class="remarks">Start guessing the numbers and save cat from tiger</div>
+      <img id="catrun" src="gifs/Cat Falling Over Gif.gif" alt="cat run">
+      <img id="tigerrun" src="gifs/tiger-running-unscreen (1).gif" alt="tiger run">
+    </section>
+    <section id="win1" style="display: none;">
+      <img id="wins1" class="won1" src="gifs/winlevel1.gif" alt="win Level 1">
+      <img id="catwin" class="catwon" src="gifs/catrun.gif" alt="cat win">
+      <img id="continue" class="next" src="gifs/nextplay.png" alt="next play">
+      <div id="finalscore1" class="score">15</div>
+      <audio id="winsound" src="sound/win.wav"></audio>
+      <audio id="catlike" src="sound/catlike.wav"></audio>
+      <audio id="firework" src="sound/firework.wav"></audio>
+    </section>
+    <section id="lose1" style="display: none;">
+      <img id="lose" class="loose" src="gifs/loselevel1.gif" alt="lose Level 1">
+      <audio id="losesound" src="sound/losing.wav"></audio>
+      <audio id="tigerwin" src="sound/tigerwin.wav"></audio>
+      <audio id="catlose" src="sound/catlose.mp3"></audio>
+    </section>
+    <section id="hardlevel" style="display: none;">
+      <img id="hard" src="gifs/hardlevel.gif" alt="hard Level">
+    </section>
+    <section id="level2" style="display:none;">
+      <img id="hardlevel2" src="gifs/level2.gif" alt="hard Level">
+      <div class="outer-box">
+        <div class="inner-box">
+          <input type="number" class="guessInput" id="guessInput-2" min="1" placeholder="guess" />
+        </div>
+      </div>
+      <div class="score scoreup">
+        <span>Score:</span>
+        <div id="scores-2">15</div>
+      </div>
+      <div class="time timess" id="timer-2">30</div>
+      <h3>Q1:</h3>
+      <div id="remarks-2" class="remarks">Start guessing the numbers and save Cat from Shark</div>
+      <img id="ok-2" class="enter" src="gifs/ok.PNG" alt="Level 2">
+      <img id="stop-2" class="restart" src="gifs/stop.PNG" alt="Level 2">
+      <img id="catstand" class="catsta" style="display: none;" src="gifs/catstand.gif" alt="cat stand">
+      <img id="catstand2" class="catup" style="display: none;" src="gifs/catstand.gif" alt="cat stand">
+      <img id="catjump" class="catjumpy" style="display: none;" src="gifs/catjump.gif" alt="cat jump">
+      <img id="catjump2" class="catjump1" style="display: none;" src="gifs/catjump.gif" alt="cat jump">
+      <img id="sharkstand" class="sharksta" style="display: none;" src="gifs/sharkteeth.gif" alt="shark stand">
+      <img id="sharkstand2" class="sharkup" style="display: none;" src="gifs/sharkteeth.gif" alt="shark stand">
+    </section>
+    <section id="winlevel2" style="display: none;">
+      <img id="win2" src="gifs/winlevel2.gif" alt="win Level2">
+      <img id="cont" class="next" src="gifs/nextplay.png" alt="next play">
+      <img id="stop-3" class="restart replay" src="gifs/stop.PNG" alt="Level 3">
+      <audio id="near" src="sound/near.wav"></audio>
+      <audio id="angrycat" src="sound/angrycat.wav"></audio>
+      <div id="finalscore2" class="score">15</div>
+      <div id="final2" class="score">Score:</div>
+    </section>
+    <section id="loselevel2" style="display: none;">
+      <img id="lose2" src="gifs/loselevel2.gif" alt="lose Level 2">
+    </section>
+    <section id="impossible" style="display: none;">
+      <img id="impossiblelevel" src="gifs/impossible.gif" alt="Impossible">
+    </section>
+    <section id="level3" style="display:none;">
+      <img id="impossiblelevel3" src="gifs/level3.gif" alt="Impossible Level">
+      <div class="outer-box">
+        <div class="inner-box">
+          <input type="number" class="guessInput" id="guessInput-3" min="1" placeholder="guess" />
+        </div>
+      </div>
+      <div class="score scoreups">
+        <span>Score:</span>
+        <div id="scores-3">15</div>
+      </div>
+      <div id="remarks-3" class="remarks">Start guessing the numbers and help cat to find owner</div>
+      <img id="ok-3" class="enter" src="gifs/ok.PNG" alt="Level 3">
+      <img id="stop-3" class="restart" src="gifs/stop.PNG" alt="Level 3">
+      <img style="display: block;" id="catfind" src="gifs/catfind.gif" alt="cat find">
+      <img style="display: none;" id="catwalk" src="gifs/catwalk.gif" alt="cat walk">
+    </section>
+    <section id="loselevel3" style="display: none;">
+      <img id="lose3" src="gifs/loselevel3.gif" alt="lose Level 3">
+    </section>
+    <section id="cateatlevel3" style="display: none;">
+      <img id="cateat" src="gifs/cateating.gif" alt="cateat">
+      <img id="ok-4" class="enter" src="gifs/ok.PNG" alt="Level 3">
+      <div class="outer-box">
+        <div class="inner-box">
+          <input type="text" class="guessInput" id="guessInput-4" placeholder="name" />
+        </div>
+      </div>
+    </section>
+    <section id="winlevel3" style="display: none;">
+      <img id="win3" src="gifs/winfinal.gif" alt="win Level 3">
+      <div id="remarks-4" class="remarks">Haleema khalid</div>
+      <audio id="winfinal" src="sound/winfinal.wav"></audio>
+    </section>
+  </main>
+  <script src="guess.js"></script>
+</body>
+
+</html>
